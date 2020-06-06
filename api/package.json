@@ -23,7 +23,7 @@
   "author": "Adam Scott",
   "license": "MIT",
   "dependencies": {
-    "apollo-server-express": "2.4.0",
+    "apollo-server-express": "2.14.2",
     "bcrypt": "3.0.6",
     "cors": "2.8.5",
     "dotenv": "6.1.0",
