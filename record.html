@@ -1,0 +1,29 @@
+<html> 
+
+<script> 
+
+
+function record(){
+
+
+var recordedChunks = [];
+
+var options = {mimeType: 'video/webm;codecs=vp9'};
+mediaRecorder = new MediaRecorder(stream, options);
+mediaRecorder.ondataavailable = handleDataAvailable;
+mediaRecorder.start();
+
+function handleDataAvailable(event) {
+    if (event.data.size > 0) {
+    recordedChunks.push(event.data);
+    } else {
+    // ...
+    }
+}
+
+}
+
+</script> 
+<body onload="record()">
+ Recording.. 
+</body></html>
